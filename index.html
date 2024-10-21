@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons-5</title>
+</head>
+
+<body>
+    <!-- <li>
+        <a href="./task/task-1.html">Задача 1</a> <br>
+        <p>
+        </p>
+    </li>
+
+    <li>
+        <a href="./task/task-2.html">Задача 2</a> <br>
+        <p>
+
+        </p>
+    </li>
+
+    <li>
+        <a href="./task/task-3.html">Задача 3</a> <br>
+        <p>
+        </p>
+    </li>
+
+    <li>
+        <a href="./task/task-4.html">Задача 4</a> <br>
+        <p></p>
+    </li>
+
+    <li>
+        <a href="./task/task-5.html">Задача 5</a> <br>
+        <p>
+
+        </p>
+    </li>
+
+    <li>
+        <a href="./task/task-6.html">Задача 6</a> <br>
+        <p>
+
+        </p>
+    </li>
+
+    <li>
+        <a href="./task/task-7.html">Задача 7</a> <br>
+        <p>
+
+        </p>
+    </li> -->
+
+    <script>
+        //Вивести всі парні числа від 12 до 34
+        // for(let i = 12; i <= 34; i+=2) {
+        //     document.write (`<div> ${i} </div>`)
+        // }
+        // for(let u = 10; u <= 100; u += 10) {
+        //     document.write (`<div> ${u} </div>`)
+        // }
+
+        // Приклад*. «Тренажер множення». Розробити програму, яка випадковим чином (4 рази) генерує перше число в межах від 1 до 9, друге число від 1 до 9 і перевірити чи знає користувач, чому дорівнює результат їх множення. Підрахувати кількість правильних відповідей.
+        // let userCountAnswer = 0
+        // for (let i = 1; i <= 10; i++) {
+        //     let num1 = 1 + Math.floor(Math.random() * 9)
+        //     let num2 = 1 + Math.floor(Math.random() * 9)
+        //     let userAnswer = parseInt(prompt(`Результат множення ${num1} та ${num2}`))
+        //     if (userAnswer === num1 * num2) {
+        //         alert(`Ти вгадала`)
+        //         userCountAnswer++
+        //     }
+        //     else alert(`Не вірно, ти БЛОНДИНКА правильно будет ${num1 * num2}`)
+
+        // }
+        // document.write (`Кількість правильних відповідей БЛОНДИНКИ  ${userCountAnswer}`)
+
+        //Перевірити таблицю множення від 3 до 8  (друге число змінюєтсья завжди від 1 до 9)
+        //   for (let i = 2; i <= 9; i++) {
+        //     for(let k =1; k <= 9; k++) {
+        //         let userCountAnswer = parseInt(prompt(`Скільки буде ${i} * ${k}`))
+        //         if (userCountAnswer === i * k) {
+        //             alert(`Вірно`)
+        //         } else {
+        //             alert(`неправильно, вірно ${i * k}`)
+        //         }
+        //     }
+        //   }
+
+        //З клавіатури поступово вводяться імена 5 учнів. Визначити скільки є імен Іван
+        // let nameIvan = 'Ivan'
+        // let counter = 0
+        // for(let i = 0; i < 5; i++) {
+        //     let userName = prompt('Як вас звати')
+        //     if (userName == nameIvan) {
+        //         counter++
+        //     }
+        // }
+        // document.write(`є імен Іван ${counter}`)
+
+        //Реалізувати за допомогою alert таймер відліку від 10 до 1
+        // for(let o = 10; o > 0; o--) {
+        //     alert(`${o}`)
+        // }
+
+        //Вводимо початкову кількість булочок, які треба продати.  Поки залишаються булочки продавати їх клієнтам
+        // let totalBunsNumber = parseInt(prompt('Яка к-сть булочок'))
+        // while (totalBunsNumber > 0) {
+        //     let userBunsNumber = parseInt(prompt(`Скільки хочете купити булочок в наявност${totalBunsNumber}`))
+        //     if (userBunsNumber <= totalBunsNumber) {
+        //         alert('Смачного')
+        //         totalBunsNumber -= userBunsNumber
+        //     } else {
+        //         alert('Немає стільки в наявності')}
+        // }
+        // alert('Закінчилися')
+
+        //Задача. З клавіатури 6 разів генерується ціле число в межах від 1 до 10 і кожного разу дається можливість користувачу вгадати число.
+        // let counter = 0;
+        // for(let i = 0; i < 6; i++) {
+        //     alert (`--- вгадуємо число ${i + 1} ---`)
+        //     let randNumber = 1 + Math.floor(Math.random() * 10)
+        //     do {
+        //          let userAnswer = parseInt(prompt('Введіть число від 1 до 10 потрібно вгадати'))
+        //     }
+        //     while (randNumber !==userAnswer) {
+        //         alert('Ви не вгадали')
+        //         userAnswer = parseInt(prompt('Введіть число від 1 до 10 потрібно вгадати'))
+        //         counter++
+        //     }
+        //     if (randNumber === userAnswer) {
+        //         alert('Ви вгадали Вітаю!')
+        //     }
+        // if (randNumber === userAnswer) {
+        //     alert('ви вгадали правильно')
+        //     counter++
+        // } else alert(`не вірно правильне число ${randNumber}`)
+        // }
+        //    document.write(`Вгадування 6 чисел завершено. Ви вгадували ${counter} разів`)
+
+        // Маємо 4 марковані списки з 3 елементами у кожному
+        // for (let i = 1; i <= 4; i++) {
+        //     document.write(`<ul>список ${i}`)
+        //         for (let j = 1; j <= 3; j++) {
+        //              document.write(`<li>елемент ${j} </li>`)
+        //         }
+        //     document.write(`</ul>`)
+        // }
+
+        // Приклад*. З клавіатури вводяться два числа N i M (N<M). Вивести а екран числа
+        //     let n = parseInt(prompt('Введіть перше число'))
+        //     let m = parseInt(prompt('Введіть друге число'))
+
+        // while (n < m) {
+        //     document.write(`${n} - ${m} <br>`)
+        //     n++
+        //     m--
+        // }
+        //Приклади*. З клавіатури вводиться пароль поки не буде вірним (правильний пароль «123»).
+        // let password
+        // do {
+        //     password = parseInt(prompt('Введіть пароль'))
+        // } while (password !== 123) {
+        //     alert('Успіх')
+        // }
+
+        /*Приклад*. Оленка має 0 грн. і хоче назбирати на телефон (10000 грн.). Для цього кожного разу допомагає мамі і отримує гонорар - випадкова величина від 1 до 200 грн. Підрахувати скільки разів треба допомагати Оленці поки не назбирає на телефон. */
+        // let moneyOlenka = 0
+        // let mob = 10000
+        // while (moneyOlenka <= mob) {
+        //     let questionHelp = prompt(`Зараз у Оленки ${moneyOlenka} грошей, хочеш назбирати на телефон тоді допоможи`, 'ok')
+        //     let helpMoney = 500 + Math.floor(Math.random() * 2000)
+        //     if (questionHelp == 'ok') {
+        //           moneyOlenka += helpMoney
+        //     }
+        // }
+        // alert('Іди купувати телефон')
+
+        //  let moneyOlenka = 0
+        //  let mob = 10000
+        //  do {
+        //     let momMoney = parseInt(prompt(`Дай грошей. Потрібно ще ${mob - moneyOlenka} - в мене є ${moneyOlenka}`))
+        //     moneyOlenka += momMoney
+        //  } while (moneyOlenka <= mob)
+        //  alert('Іди купувати телефон')
+
+
+        // Приклади*. 3 рази дати можливість ввести пароль (правильний пароль «123»).
+        //   let correctPassword = 123
+        //   for ( let i = 0; i < 3; i++) {
+        //      let userAnswer = parseInt(prompt(`введіть пароль у вас є ${ 3 - i} спроби`))
+        //      if(userAnswer === correctPassword) {
+        //         alert('Вітаю')
+        //         break
+        //      }  else {alert('Пароль не правильний') }
+        //      if(i == 2) {
+        //         alert('Доступ заборонено, зверніться до адміністратора')
+        //      }
+        //   }
+
+        //Приклад. Користувач кожного дня протягом 3 тижнів купляв товар за ціною, що могла змінюватись щодня. Знайти скільки всього заплатив користувач. Якщо користувач припиняє введення (натиснув на «Відміна» під час введення), то вивести поточну суму і припинити сумування.
+        // let bread = 5
+        // let moneyUser = 0
+        // priceWeek: for (let i = 1; i <= 3; i++) {
+        //     for (let k = 1; k <= 7; k++) {
+        //         let priceProduct = bread + Math.floor(Math.random() * 9)
+        //         let userProduct = confirm(`Бажаєте купити хліб сьогодні ${i} тиждень ${k} день?  Він коштує ${priceProduct}грн`)
+        //         if (userProduct == true) {
+        //             moneyUser += priceProduct
+        //         }
+        //         if (userProduct == false) {
+        //             alert(`Ви заплатили за весь час ${moneyUser} грн, хліб коштував сьогодні ${priceProduct}грн`)
+        //             break priceWeek
+        //         }
+        //     }
+        //     if (i == 3) {
+        //         alert(`Ви заплатили за весь час ${moneyUser} грн`)
+        //         break
+        //     }
+        // }
+
+        //Приклад. Поступово вітаємо учнів з 3-х класів (по 10 учнів у класі) поки не зустрінемо Івана. Якщо зустріли Івана, то переходимо до наступного класу
+       let personIvan = 0
+       meetingIvan: for(let i = 1; i <= 3; i++) {
+         for ( let k = 1; k <= 10; k++) {
+                let scientistsClass = prompt(`В клас ${i} заходить ${k} учень. Вчитель запитує, як вас звати?`).toUpperCase()
+                alert(`Вітаємо ${scientistsClass}`)
+                if(scientistsClass == 'ІВАН') {
+                     personIvan++
+                    continue meetingIvan  
+                } 
+            }
+        }
+        document.write(`Фільтрація Іванів закінчилася знайшли ${personIvan} Ванька-дурачка`)
+        
+    </script>
+</body>
+
+</html>
